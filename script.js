@@ -1,18 +1,24 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword(characterAmount, includeUppercase, includeSymbols, includeNumbers) {
+function generatePassword() {
   console.log("Button has been clicked")
-  prompt ("Would you like your password to have uppercase letters? Please write Yes or No.")
-  if ("yes")
-  var includeUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  var includeLowercase = "abcdefghijklmnopqrstuvwxyz"
-  var includeNumbers = "0123456789"
-  //prompt the user
+
+  let includeUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  let includeLowercase = "abcdefghijklmnopqrstuvwxyz"
+  let includeNumbers = "0123456789"
+  let includeSpecial = "~!@#$%^&*()_+{}:?><;."
+  let password = ""
+
+
+
+
+  //prompt the user to answer with yes or no answers
   //password legnth 8 < 128
-  //lowercase, uppercase, special characters
-  //validate input
+  //lowercase, uppercase, specials
+  //create if and else scenarios to make sure it meets criteria
   //generate password
+
   //display password
   return "Generated Password"
 }
@@ -28,3 +34,5 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
