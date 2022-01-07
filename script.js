@@ -74,6 +74,20 @@ for (let i = 0; i < plength; i= i + 1) {
 return password;
 }
 
+
+function writePassword() {
+  var password = generatePassword();
+
+  //Matches the id declared in the CSS so will be displayed on page
+  var actualPassword = document.querySelector("#password");
+  actualPassword.value = password;
+  console.log ("generated password = " + password)
+
+}
+
+// Generates the button
+generateBtn.addEventListener("click", writePassword);
+
   
 
 
