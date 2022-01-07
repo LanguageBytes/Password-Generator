@@ -34,3 +34,36 @@ var uppercaseQuestion = confirm('Include uppercase letters?')
 var numbersQuestion = confirm('Include numbers?')
 var specialQuestion = confirm('Include special characters?')
 
+
+//Conditions
+
+//These will determine the outcome of the password based on the user's answers to the questions.
+
+if (lowercaseQuestion) {
+  userSpecification += lowercase
+  console.log ("lowercase chosen")
+  
+}
+if (uppercaseQuestion) {
+  userSpecification += uppercase
+  console.log ("uppercase chosen")
+}
+if (numbersQuestion) {
+  userSpecification += numbers
+  console.log ("numbers chosen")
+}
+if (specialQuestion) {
+  userSpecification += special
+  console.log ("special chosen")
+}
+
+
+// If these conditions are NOT met, the user will be asked to retry.
+if (
+  !uppercaseQuestion && !lowercaseQuestion && !numbersQuestion && !specialQuestion
+) {
+  return alert('You need at least 1: Uppercase, Numbers or Special Characters');
+  
+}
+
+
