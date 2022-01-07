@@ -1,38 +1,26 @@
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword() {
-  console.log("Button has been clicked")
+//Setting the variables
+function generatePassword(){
+  var lowercase = 'abcdefghijklmnopqrstuvwxyz';
+  var uppercase = 'ABCDEFGHIJKLMNOPRSTUVWXYZ';
+  var numbers = '1234567890';
+  var special = '~!@#$%^&*()_+{}:?><;.,';
+  var password = '';
+  var userSpecification = '';
 
-  let includeUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  let includeLowercase = "abcdefghijklmnopqrstuvwxyz"
-  let includeNumbers = "0123456789"
-  let includeSpecial = "~!@#$%^&*()_+{}:?><;."
-  let password = ""
+// What is the length of the password?
+var plength = prompt('Enter your password length (must be a number between 8 and 128).')
 
-
-
-
-  //prompt the user to answer with yes or no answers
-  //password legnth 8 < 128
-  //lowercase, uppercase, specials
-  //create if and else scenarios to make sure it meets criteria
-  //generate password
-
-  //display password
-  return "Generated Password"
+// Is the password long enough?
+if (plength > 8 && plength < 128) {
+  console.log(plength + " characters in length")
 }
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+// if not, alert the user to try again.
+else {
+  alert('Must be between 8 - 128 characters.')
+  return '';
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-
