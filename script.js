@@ -66,4 +66,14 @@ if (
   
 }
 
+//Randomly generates the password based on criteria selected by the user.
+for (let i = 0; i < plength; i= i + 1) {
+  
+  password +=userSpecification[Math.floor(Math.random () * userSpecification.length)];
+}
+return password;
+}
+
+  
+
 
