@@ -24,3 +24,13 @@ else {
   alert('Must be between 8 - 128 characters.')
   return '';
 }
+
+// Questions
+
+//These will ask the user for the specifications of their password.
+
+var lowercaseQuestion = confirm('Include lowercase letters?')
+var uppercaseQuestion = confirm('Include uppercase letters?')
+var numbersQuestion = confirm('Include numbers?')
+var specialQuestion = confirm('Include special characters?')
+
