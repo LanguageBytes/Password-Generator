@@ -24,7 +24,7 @@ var specialQuestion = confirm('Include special characters?')
 
 //Conditions
 
-//These will determine the outcome of the password based on the user's answers to the questions.  
+//This will determine the outcome of the password based on the user's answers to the questions.  
 
 if (lowercaseQuestion) {
   userSpecification += lowercase
@@ -47,7 +47,7 @@ if (specialQuestion) {
 if (
   !uppercaseQuestion && !lowercaseQuestion && !numbersQuestion && !specialQuestion
 ) {
-  return alert('You need at least 1: Uppercase, Numbers or Special Characters');
+  return alert('You need at least 1: uppercase, lowercase, numbers or special Characters');
 }
 
 // What is the length of the password?
@@ -65,7 +65,7 @@ else {
 }
 
 //Randomly generates the password based on criteria selected by the user.
-for (let i = 0; i < plength; i= i + 1) {
+for (var i = 0; i < plength; i= i + 1) {
   
   password +=userSpecification[Math.floor(Math.random () * userSpecification.length)];
 }
@@ -76,7 +76,7 @@ return password;
 function writePassword() {
 var password = generatePassword();
 
-//Matches the id declared in the CSS and html so will be displayed in the middle of the page
+//Matches the id declared in the CSS and html so the generated password will be displayed in the middle of the page
 var actualPassword = document.querySelector("#password");
 actualPassword.value = password;
 console.log ("generated password = " + password)
