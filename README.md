@@ -2,8 +2,7 @@
 
 ## Commentary 
 
-![Test Image](Screenshot.png)
-
+![screenshot] (Images/PwSreen.png)
 
 The variables are declared at the beginning - these are different charset options of uppercase, lowercase, special characters and the length of the password. 
 
