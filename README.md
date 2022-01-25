@@ -2,9 +2,9 @@
 
 ## <p align="center"> Commentary </p>
 
-Link to deployed site:  https://languagebytes.github.io/Secure-Password-Generator/
-
 <p align ="center">  <img src="Images/PwScreen.png"> </p>
+
+Link to deployed site:  https://languagebytes.github.io/Secure-Password-Generator/
 
 The variables are declared at the beginning - these are different charset options of uppercase, lowercase, special characters and the length of the password. 
 
