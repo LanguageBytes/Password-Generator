@@ -1,4 +1,4 @@
-# <p align="center"> Password-Generator </p>
+# <p align="center"> Secure Password Generator </p>
 
 ## <p align="center"> Commentary </p>
 
