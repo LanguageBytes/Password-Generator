@@ -4,7 +4,7 @@
 
 Link to deployed site:  https://languagebytes.github.io/Secure-Password-Generator/
 
-<p align ="center"> ![screenshot](Images/PwScreen.png) </p>
+<p align ="center">  <img src="Images/PwScreen.png"> </p>
 
 The variables are declared at the beginning - these are different charset options of uppercase, lowercase, special characters and the length of the password. 
 
